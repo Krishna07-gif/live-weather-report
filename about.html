@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+      #fullContent {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p><h1 class="my-4 text-center" style="font-family: 'Times New Roman', Times, serif;"><b>Little about me...</b></h1></p>
+    <main class="container">
+      <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 fst-italic" style="font-family: 'Times New Roman', Times, serif;"><b>Weather Report</b></h1>
+          <p class="lead my-3">Welcome to our Weather Report, the go-to source for real-time and accurate weather information. We strive to provide you with the most up-to-date weather conditions, ensuring that you are well-informed and prepared for any outdoor activities or plans.</p>
+          <p class="lead mb-0" id="continueReading"><a href="#" class="text-white fw-bold" onclick="toggleContent()">Continue reading...</a></p>
+          <div id="fullContent">
+            <p><h2>Real-Time Weather Updates</h2>
+                Stay informed with our real-time weather updates. Our dedicated team of meteorologists and advanced weather monitoring systems work round the clock to bring you the latest information on temperature, humidity, wind speed, precipitation, and other important weather parameters. With our Weather Report, you can rely on timely and accurate data for your location.</p>
+                <h2>Multiple Locations</h2>
+                Whether you're at home or traveling, our Weather Report covers you wherever you go. Easily add and manage multiple locations to stay updated on weather conditions in your hometown, vacation spots, or any other places of interest. Plan your activities and trips with confidence, knowing you have access to reliable weather information.
+                <h2>User-Friendly Interface</h2>
+                We understand the importance of a user-friendly experience. Our Weather Report is designed with simplicity and functionality in mind. The intuitive interface allows you to effortlessly navigate through the app or website, find the information you need, and customize your settings according to your preferences.
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function toggleContent() {
+        var fullContent = document.getElementById("fullContent");
+        var continueReading = document.getElementById("continueReading");
+        
+        if (fullContent.style.display === "none") {
+          fullContent.style.display = "block";
+          continueReading.style.display = "none";
+        } else {
+          fullContent.style.display = "none";
+          continueReading.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
